@@ -48,7 +48,7 @@ To run this project locally, follow these steps:
 
 - `static/`: Contains images and css files
 - `templates/`: Contains HTML files
-- `app.py`: Initial data exploration
+- `app.py`: Main Flask App
 - `model.pkl`: Pickle file of predicting placement model
 - `model1.pkl`: Pickle file of Salary Prediction model
 - `Placement_prediction_data.csv`: Placement Prediction data
@@ -100,6 +100,10 @@ The models' performance is evaluated using various metrics, including:
 **CONFUSION MATRIX**:
 
 <img src="static/images/confusion_matrix.png " alt="Alt text" width="400" height="400">
+
+**ROC CURVE**:
+
+<img src="static/images/roc_curve.png " alt="Alt text" width=100%>
 
 ## Flask App
 
