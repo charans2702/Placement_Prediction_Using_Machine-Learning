@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/style.css">
+    <title>Placement Prediction</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Placement Prediction App</h1>
+        </header>
+        <form action="{{ url_for('predict') }}" method="GET">
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="branch">Branch</label>
+                    <select id="branch" name="branch" required>
+                        <option value="" disabled selected>Select branch</option>
+                        <option>CSE</option>
+                        <option>ISE</option>
+                        <option>ECE</option>
+                        <option>CSE-AI</option>
+                        <option>MECHANICAL ENGINEERING</option>
+                        <option>CIVIL ENGINEERING</option>
+                        <option>CSE-DS</option>
+                        <option>CSE-CY</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="cgpa">CGPA</label>
+                    <input type="number" id="cgpa" name="cgpa" min="0" max="10" step="0.01" required>
+                </div>
+                <div class="form-group">
+                    <label for="skills">Skills</label>
+                    <input type="text" id="skills" name="skills" required>
+                </div>
+                <div class="form-group">
+                    <label for="internship">Internship</label>
+                    <select id="internship" name="internship" required>
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="hackathon">Hackathon</label>
+                    <select id="hackathon" name="hackathon" required>
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="projects">Major Projects</label>
+                    <input type="number" id="projects" name="projects" min="0" required>
+                </div>
+                <div class="form-group">
+                    <label for="workshops">Certifications</label>
+                    <input type="number" id="workshops" name="workshops" min="0" required>
+                </div>
+                <div class="form-group">
+                    <label for="mini_projects">Mini Projects</label>
+                    <input type="number" id="mini_projects" name="mini_projects" min="0" required>
+                </div>
+                <div class="form-group">
+                    <label for="communication_skills">Communication Rating</label>
+                    <input type="number" id="communication_skills" name="communication_skills" min="0" max="10" step="0.1" required>
+                </div>
+                <div class="form-group">
+                    <label for="tw_percentage">12th Percentage</label>
+                    <input type="number" id="tw_percentage" name="tw_percentage" min="0" max="100" step="0.01" required>
+                </div>
+                <div class="form-group">
+                    <label for="te_percentage">10th Percentage</label>
+                    <input type="number" id="te_percentage" name="te_percentage" min="0" max="100" step="0.01" required>
+                </div>
+                <div class="form-group">
+                    <label for="backlogs">Backlogs</label>
+                    <input type="number" id="backlogs" name="backlogs" min="0" required>
+                </div>
+            </div>
+            <button type="submit">Predict Placement</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,163 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --background-color: rgba(0, 0, 0, 0.8);
+    --text-color: #ecf0f1;
+    --input-background: #34495e;
+    --input-text: #ecf0f1;
+}
+
+body, html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: url('../images/img.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+form {
+    background-color: var(--background-color);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: var(--input-background);
+    color: var(--input-text);
+    transition: all 0.3s ease;
+}
+
+/* Reduce width of name input */
+#name {
+    width: 95%;
+}
+
+#skills {
+    width: 95%;
+}
+
+#cgpa{
+    width: 95%;
+}
+
+#projects{
+    width: 95%;
+}
+
+#workshops{
+    width: 95%;
+}
+
+#mini_projects{
+    width: 95%;
+}
+
+#communication_skills{
+    width: 95%;
+}
+
+#tw_percentage{
+    width: 95%;
+}
+
+#te_percentage{
+    width: 95%;
+}
+
+#backlogs{
+    width: 95%;
+}
+
+
+input:focus, select:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--primary-color);
+}
+
+button {
+    display: block;
+    width: 200px;
+    padding: 12px;
+    margin: 30px auto 0;
+    background-color: var(--secondary-color);
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #27ae60;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 1200px) {
+    .form-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Adjust name input width for smaller screens */
+    #name {
+        width: 100%;
+    }
+
+    #skills {
+        width: 100%;
+    }
+}

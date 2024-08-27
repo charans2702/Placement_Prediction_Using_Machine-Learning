@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style2.css') }}">
+    <title>Placement Prediction</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Placement Prediction Result</h1>
+        </header>
+        <main>
+            <div class="result-container">
+                <h2>Your Result is</h2>
+                <div class="output">
+                    <p>{{ output }}</p>
+                    <p>{{ output2 }}</p>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
