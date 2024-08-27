@@ -4,6 +4,8 @@ This project focuses on predicting student placement and salary in campus recrui
 
 ## Final Result
 <img src="static/images/pl1.png" alt="Alt text" width=100%>
+<img src="static/images/pl2.png" alt="Alt text" width=100%>
+<img src="static/images/pl3.png" alt="Alt text" width=100%>
 ## Table of Contents
 - [Overview](#overview)
 - [Dataset](#dataset)
