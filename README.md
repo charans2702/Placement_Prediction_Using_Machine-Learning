@@ -46,19 +46,17 @@ To run this project locally, follow these steps:
 
 ## Project Structure
 
-- `data/`: Contains the dataset files
-- `notebooks/`: Jupyter notebooks for data exploration and model development
-- `Exploratory_Data_Analysis.ipynb`: Initial data exploration
-- `Placement_Prediction_Model.ipynb`: Model for predicting placement
-- `Salary_Prediction_Model.ipynb`: Model for predicting salary
-- `src/`: Source code for the project
-- `data_preprocessing.py`: Script for data cleaning and preprocessing
-- `model_training.py`: Script for training the models
-- `evaluation.py`: Script for model evaluation
-- `models/`: Saved model files
-- `results/`: Evaluation results and visualizations
-- `app.py`: Flask application for model deployment
+- `static/`: Contains images and css files
+- `templates/`: Contains HTML files
+- `app.py`: Initial data exploration
+- `model.pkl`: Pickle file of predicting placement model
+- `model1.pkl`: Pickle file of Salary Prediction model
+- `Placement_prediction_data.csv`: Placement Prediction data
+- `Placement_prediction.py`: Model for Placement Prediction
+- `preprocessing.ipynb`: Jupyter Notebook for Data preprocessing
 - `requirements.txt`: List of required Python packages
+- `salary_prediction_data.csv`: Salary prediction data
+- `salary_prediction.py`: Model for salary prediction
 - `README.md`: Project documentation
 
 ## Data Preprocessing
