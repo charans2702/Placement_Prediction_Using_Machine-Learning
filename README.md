@@ -40,7 +40,7 @@ To run this project locally, follow these steps:
 
 1. Clone the repository:
    git clone https://github.com/charans2702/Placement_Prediction_Using_Machine-Learning.git
-   cd placement-prediction
+   
 2. Install the required packages:
    pip install -r requirements.txt
 
@@ -86,22 +86,20 @@ The models' performance is evaluated using various metrics, including:
 - Precision
 - Recall
 - F1 Score
-- Mean Absolute Error (for salary prediction)
-- R-squared score (for salary prediction)
+- Confusion Matrix
+- Roc_Auc_Score
 
 ## Results
 
 ### Placement Prediction Model
-- Accuracy: X%
-- Precision: X
-- Recall: X
-- F1 Score: X
+- Accuracy: 88.7%
+- Precision: 0.93
+- Recall: 0.86
+- F1 Score: 0.90
 
-### Salary Prediction Model
-- Mean Absolute Error: $X
-- R-squared Score: X
+**CONFUSION MATRIX**:
 
-[Include visualizations like confusion matrices, feature importance plots, etc.]
+<img src="static/images/confusion_matrix.png " alt="Alt text" width="400" height="400">
 
 ## Flask App
 
