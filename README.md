@@ -106,6 +106,10 @@ The models' performance is evaluated using various metrics, including:
 
 <img src="static/images/roc_curve.png " alt="Alt text" width="500" height="400">
 
+**FEATURE IMPORTANCE**:
+
+<img src="static/images/feature_importance.png " alt="Alt text">
+
 ## Flask App
 
 The trained models are deployed using a Flask web application. The app allows users to input student details and receive predictions for placement probability and expected salary.
