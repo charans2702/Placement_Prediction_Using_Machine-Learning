@@ -96,6 +96,7 @@ The models' performance is evaluated using various metrics, including:
 - Precision: 0.93
 - Recall: 0.86
 - F1 Score: 0.90
+- Roc_Auc_Score:0.94
 
 **CONFUSION MATRIX**:
 
@@ -103,7 +104,7 @@ The models' performance is evaluated using various metrics, including:
 
 **ROC CURVE**:
 
-<img src="static/images/roc_curve.png " alt="Alt text" width=100%>
+<img src="static/images/roc_curve.png " alt="Alt text" width="500" height="400">
 
 ## Flask App
 
